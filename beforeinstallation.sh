@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install python3-pip python-dev nginx git
+sudo apt-get -y install python3-pip python-dev nginx git
 sudo apt-get update
 sudo pip3 install virtualenv
 virtualenv venv
