@@ -101,14 +101,13 @@ CHANNEL_LAYERS = {
 # Database
 
 DATABASES = {
-      'default': {
-      'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'db_name',
-        'USER': 'postgres',
-        'PASSWORD': 'Uday.kumar1',
-        'HOST': 'database-2.ckt050x9qbxj.us-east-2.rds.amazonaws.com',
-        'PORT': '5432',
-
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.environ.get('NAME'),
+        'USER': os.environ.get('USER'),
+        'PASSWORD': os.environ.get('PASSWORD'),
+        'HOST': os.environ.get('HOST'),
+        'PORT': os.environ.get('PORT'),
     }
 }
 #sagar kadam
